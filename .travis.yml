@@ -1,4 +1,5 @@
 language: c
-compiler: gcc
-
-script: make test
+script: make dep && make && make test
+sudo: required
+compiler:
+  - gcc
